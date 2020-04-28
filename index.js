@@ -15,19 +15,24 @@
 // Refer to template mentioned in readme
 
 const inquirer = require('inquirer')
+const api = require('./utils/api.js')
 
 const questions = [
     {
         type: 'input',
         name: 'username',
         message: 'What is your GitHub username?',
-      },
+    },
 ];
 
 inquirer.prompt(questions).then(answers => {
-    console.log('\nUsername:');
-    console.log(JSON.stringify(answers.username));
-  });
+    async function run() {
+        let { email, picture } = await api(answers.username);
+        console.log(email, picture)
+    }
+
+    run();
+});
 
 function writeToFile(fileName, data) {
 }
