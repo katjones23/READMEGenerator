@@ -1,5 +1,3 @@
-// user gives username
-// api retrieves email and profile image
 // * At least one badge
 // * Project title
 // * Description
