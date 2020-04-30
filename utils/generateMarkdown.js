@@ -3,7 +3,7 @@ function generateMarkdown(data) {
 # ${data.title}
 
 
-<img src="https://img.shields.io/badge/license-${data.badge}-green" alt="License Badge">
+<img src="https://img.shields.io/badge/license-${data.license}-green" alt="License Badge">
 <img src="https://img.shields.io/github/repo-size/${data.username}/${data.repo}" alt="Size Badge">
 
 
@@ -16,7 +16,6 @@ ${data.description}
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -25,19 +24,13 @@ ${data.description}
 
 ## Installation
 
+\`\`\`
 ${data.installation}
-
+\`\`\`
 
 ## Usage 
 
 ${data.usage}
-
-
-## Credits
-
-[${data.collabName}](${data.collabLink})
-
-${data.assets}
 
 
 ## License
@@ -52,12 +45,13 @@ ${data.contributing}
 
 ## Tests
 
-${data.tests}.
-
+\`\`\`
+${data.tests}
+\`\`\`
 
 ## Questions
 
-<img src="${data.image}" alt="Avatar Image">
+<img src="${data.picture}" alt="Avatar Image">
 
 If you have any questions, please contact me at ${data.email}.
 `;
