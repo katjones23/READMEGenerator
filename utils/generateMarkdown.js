@@ -2,7 +2,6 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 
-
 <img src="https://img.shields.io/badge/license-${data.license}-green" alt="License Badge">
 <img src="https://img.shields.io/github/repo-size/${data.username}/${data.repo}" alt="Size Badge">
 
@@ -51,9 +50,9 @@ ${data.tests}
 
 ## Questions
 
-<img src="${data.picture}" alt="Avatar Image">
+<img src="${data.picture}" alt="Avatar Image" style="width:100px;height:100px;border-radius: 50%;">
 
-If you have any questions, please contact me at ${data.email}.
+If you have any questions, please contact me at <a href="mailto:${data.email}">${data.email}</a>.
 `;
 }
 

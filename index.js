@@ -41,7 +41,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license should be used?',
-        choices: ['GNU GPLv3', 'MIT', 'Apache License 2.0', 'ISC']
+        choices: ['GNU-GPLv3', 'MIT', 'Apache License 2.0', 'ISC']
     },
     {
         type: 'input',
@@ -60,6 +60,21 @@ function init() {
         try {
             async function run() {
                 let { email, picture } = await api(answers.username);
+
+                switch (answers.license) {
+                    case 'GNU-GPLv3':
+                        answers.license = 'GNU';
+                        break;
+                    case 'MIT':
+                        answers.license = 'MIT';
+                        break;
+                    case 'Apache License 2.0':
+                        answers.license = 'Apache';
+                        break;
+                    case 'ISC':
+                        answers.license = 'ISC';
+                        break;
+                };
 
                 const data = {
                     username: answers.username,
