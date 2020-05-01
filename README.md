@@ -45,6 +45,6 @@ No testing added in this version.
 
 ## Questions
 
-<img src="https://avatars0.githubusercontent.com/u/53064219?v=4" alt="Avatar Image" style="width:100px;height:100px;border-radius: 50%;">
+<img src="https://avatars0.githubusercontent.com/u/53064219?v=4" alt="Avatar Image" width="100" height="100">
 
 If you have any questions, please contact me at <a href="mailto:thedevkat@gmail.com">thedevkat@gmail.com</a>.
