@@ -43,6 +43,14 @@ Please submit a pull request.
 
 No testing added in this version.
 
+## Credits
+[inquirer](https://www.npmjs.com/package/inquirer): package for prompts and answers.
+[dotenv](https://www.npmjs.com/package/dotenv): package for protecting sensitive data.
+[axios](https://www.npmjs.com/package/axios): package for API call.
+[shields.io](https://shields.io/): badges.
+[Choose a License](https://choosealicense.com/): license information.
+[GitHub](https://github.com/): API data.
+
 ## Questions
 
 <img src="https://avatars0.githubusercontent.com/u/53064219?v=4" alt="Avatar Image" style="width:100px;height:100px;border-radius: 50%;">
