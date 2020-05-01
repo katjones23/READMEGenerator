@@ -24,7 +24,7 @@ A generator for a markdown README file for GitHub users.  This will create a fil
 ## Installation
 
 ```
-Not published at this time, but prospective users are welcome to fork the repo for their own use.
+Not published at this time, but prospective users are welcome to clone the repo for their own use.
 ```
 
 ## Usage 
@@ -50,12 +50,13 @@ No testing added in this version.
 
 ## Credits
 
-* [inquirer]( https://www.npmjs.com/package/inquirer)
-* [ dotenv]( https://www.npmjs.com/package/dotenv)
-* [ axios]( https://www.npmjs.com/package/axios)
-* [ shields.io]( https://shields.io/)
-* [ Choose a License]( https://choosealicense.com/)
-* [ GitHub]( https://github.com/)
+* [inquirer](https://www.npmjs.com/package/inquirer)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [axios](https://www.npmjs.com/package/axios)
+* [shields.io](https://shields.io/)
+* [Choose a License](https://choosealicense.com/)
+* [GitHub](https://github.com/)
+* [Melody Kirshberg (verlitas)](https://github.com/verlitas/Developer-Profile-Generator)
 
 ## Questions
 
