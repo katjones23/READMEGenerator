@@ -52,6 +52,11 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'How should users run a test?'
+    },
+    {
+        type: 'input',
+        name: 'credits',
+        message: 'Who or what needs to be credited?  Please enter in the following format: John Doe, https://website.com'
     }
 ];
 
@@ -76,6 +81,8 @@ function init() {
                         break;
                 };
 
+                let creditsArr = answers.credits.split(',')
+
                 const data = {
                     username: answers.username,
                     email,
@@ -87,7 +94,8 @@ function init() {
                     usage: answers.usage,
                     license: answers.license,
                     contributing: answers.contributing,
-                    tests: answers.tests
+                    tests: answers.tests,
+                    creditsArr
                 };
 
                 const markdown = generateMarkdown(data);

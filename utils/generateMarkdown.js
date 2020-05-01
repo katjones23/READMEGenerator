@@ -1,4 +1,28 @@
 function generateMarkdown(data) {
+  const mapCreditsArr = data.creditsArr.map((item, index) => {
+    // Copy the object being iterated over
+    const cArr = [];
+    // Do everything else the same
+    if (index % 2 === 0) {
+      cArr.push(`* [${item}]`);
+    } else if (index % 2 !== 0) {
+      cArr.push(`(${item})`);
+    }
+    // Be sure to return the new obj, not the parameter
+    return cArr;
+  });
+  
+   
+   const creditSectionFn = function makeString () {
+    let creditStr = mapCreditsArr.toString();
+    let noComma = creditStr.replace(/,/g, "");
+    let newLine = noComma.replace(/\)\*/g, ")\n*");
+  
+    return newLine; 
+   } 
+
+   const creditSection = creditSectionFn();
+
   return `
 # ${data.title}
 
@@ -18,6 +42,7 @@ ${data.description}
 1. [License](#license)
 1. [Contributing](#contributing)
 1. [Tests](#tests)
+1. [Credits](#credits)
 1. [Questions](#questions)
 
 
@@ -47,6 +72,10 @@ ${data.contributing}
 \`\`\`
 ${data.tests}
 \`\`\`
+
+## Credits
+
+${creditSection}
 
 ## Questions
 
