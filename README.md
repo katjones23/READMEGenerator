@@ -12,17 +12,18 @@ A generator for a markdown README file for GitHub users.  This will create a fil
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+1. [Installation](#installation)
+1. [Usage](#usage)
+1. [License](#license)
+1. [Contributing](#contributing)
+1. [Tests](#tests)
+1. [Questions](#questions)
 
 
 ## Installation
 
 Not published at this time, but prospective users are welcome to fork the repo for their own use.
+
 
 ## Usage 
 
@@ -50,6 +51,7 @@ No testing added in this version.
 * [shields.io](https://shields.io/): badges.
 * [Choose a License](https://choosealicense.com/): license information.
 * [GitHub](https://github.com/): API data.
+
 
 ## Questions
 
