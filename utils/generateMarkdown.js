@@ -1,14 +1,11 @@
 function generateMarkdown(data) {
   const mapCreditsArr = data.creditsArr.map((item, index) => {
-    // Copy the object being iterated over
     const cArr = [];
-    // Do everything else the same
     if (index % 2 === 0) {
       cArr.push(`* [${item}]`);
     } else if (index % 2 !== 0) {
       cArr.push(`(${item})`);
     }
-    // Be sure to return the new obj, not the parameter
     return cArr;
   });
   
